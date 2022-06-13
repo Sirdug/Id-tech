@@ -1,20 +1,21 @@
-class Main {
-    public static void main(String[] args)
-    { 
-      //Declare variables
-      int strength;
-      double health;
-      String name;
+package com.trashthing;
 
-      //assign varables
-      strength = 4;
-      health = 12.5;
-      name = "The Ember Shadow";
+import java.util.Scanner;
+import java.util.Random;
 
-      //print values
-      System.out.println("Strength: " + strength);
-      System.out.println("Health: " + health );
-      System.out.println("Superhero Name: " + name);
+
+public class Main {
+    //i hate comments
+    public static void main(String[] args) {
+        Random generator = new Random();
+        Scanner Pinput;
+        String PInput;
+        int moneyzzzz;
+        Pinput = new Scanner(System.in);
+        PInput = Pinput.nextLine();
+        if (PInput.contains("money")) {
+            moneyzzzz = generator.nextInt(500000);
+            System.out.println("You stumble upon the thieves secret cache. You find " + moneyzzzz + " dollars!");
+        }
     }
-    
 }
